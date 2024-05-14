@@ -39,9 +39,9 @@ import{g as i,a as o}from"./util-CIZwhYpf.js";const t=document.querySelector(".v
    </style>
    <a href="https://www.youtube.com/embed/ApZTxOPoa54?si=PiHJDg5lLzkq4qWX">
     <picture class="photos__picture">
-     <source srcset="/video-desktop.jpg" media="(min-width:1200px)">
-     <source srcset="/video-tablet.jpg" media="(min-width:768px)">
-     <img class="video__player-image" src="/video.jpg" alt="картинка видео" width="320" height="201">
+     <source srcset="./video-desktop.jpg" media="(min-width:1200px)">
+     <source srcset="./video-tablet.jpg" media="(min-width:768px)">
+     <img class="video__player-image" src="./video.jpg" alt="картинка видео" width="320" height="201">
     </picture>
      <div id="button">
       <svg width="64" height="64" viewBox="0 0 64 64" fill="none" xmlns="http://www.w3.org/2000/svg">
