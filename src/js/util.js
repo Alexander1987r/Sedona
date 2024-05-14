@@ -60,7 +60,7 @@ export const getMap=()=>{
 
   //создадим свою метку на карте
   const markerIcon=L.icon({
-    iconUrl:'../marker.svg',
+    iconUrl:'marker.svg',
     iconSize:[42,42],
     iconAnchor:[20,50],
   });
