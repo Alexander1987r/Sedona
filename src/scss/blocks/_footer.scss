@@ -1,0 +1,39 @@
+.footer {
+  padding:28.5px 0 22.9px 0;
+}
+.footer__logo {
+  width: 166px;
+  height: 26px;
+  margin: 0 auto 33.5px auto;
+  &-image {
+    width: 100%;
+    height: auto;
+  }
+}
+.footer__list {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 35px;
+  justify-content: center;
+}
+.footer__item:not(:last-child) {
+  margin-right: 6px;
+}
+.footer__link {
+  padding-bottom:5px;
+}
+.footer__copyright {
+  text-align: center;
+  &-text {
+    display: inline-block;
+    text-transform: uppercase;
+    font-size: 14px;
+    line-height: 1.86;
+    background-image: url(/img/footer/htmlacademy.svg);
+    background-size: contain;
+    padding-right: 40px;
+    background-repeat: no-repeat;
+    background-position: right center;
+    max-width: 200px;
+  }
+}

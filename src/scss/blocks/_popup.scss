@@ -1,0 +1,50 @@
+@use '../variables' as *;
+.popup {
+
+  width: 100%;
+  text-transform: uppercase;
+  text-align: center;
+  position: fixed;
+  top: 116px;
+  left: 0;
+  z-index: 1;
+  padding: 40px 50px 35px 50px;
+  background-color: $white;
+  box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.55);
+
+  &__title {
+    font-size: 18px;
+    margin-bottom: 30px;
+  }
+  &__text {
+    font-size: 14px;
+    line-height:1.71;
+    margin-bottom: 22px;
+  }
+  &__button {
+    font-weight: 700;
+    color:$white;
+    background-color: $blue;
+    padding: 18px 64px  14px 64px;
+    margin: 0 auto;
+    text-transform: uppercase;
+  }
+}
+.popup-success{
+  padding: 0;
+  padding-top: 38px;
+  &__title{
+   margin-bottom: 38px;
+  }
+  &__text{
+    margin-bottom: 29px;
+    padding: 0 50px;
+   }
+  &__footer{
+    background-color:#f2f2f2;
+    padding: 20px 0;
+  }
+  &__button{
+    width: 280px;
+  }
+}

@@ -1,0 +1,23 @@
+:root{
+    --font-size:18px;
+}
+$font-family: "PT Sans", sans-serif;
+$font-size:var(--font-size);
+$font-weight:400;
+$line-height:1.44;
+
+@font-face {
+    font-display: swap; 
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 400;
+    src: url('/fonts/pt-sans-v17-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+
+@font-face {
+    font-display: swap; 
+    font-family: 'PT Sans';
+    font-style: normal;
+    font-weight: 700;
+    src: url('/fonts/pt-sans-v17-cyrillic_latin-700.woff2') format('woff2'); 
+}

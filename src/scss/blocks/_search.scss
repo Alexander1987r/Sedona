@@ -1,0 +1,30 @@
+@use '../variables' as *;
+.search {
+  text-align: center;
+  text-transform: uppercase;
+  padding: 33px 0 49px 0;
+  &__container{
+    width: 91.5%;
+  }
+  &__subtitle {
+    font-weight: 700;
+    font-size: 21px;
+    color: $black;
+    line-height: 1.24;
+    margin-bottom: 23px;
+  }
+  &__text {
+    font-size: 14px;
+    color: $gray;
+    margin-bottom: 27px;
+    line-height: 1.71;
+  }
+  &__link {
+    background-color: $blue;
+    color: $white;
+    padding: 14px 0 17px 0;
+    font-size: 21;
+    font-weight: 700;
+  }
+}
+

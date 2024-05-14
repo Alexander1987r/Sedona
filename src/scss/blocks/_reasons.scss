@@ -1,0 +1,104 @@
+@use '../variables' as *;
+.reasons{
+  text-align: center;
+  padding-top: 32px;
+  text-transform: uppercase;
+  &__list {
+    background-color: $blue;
+    position: relative;
+  }
+  &__item {
+    color: $white;
+    text-transform: uppercase;
+    padding-top: 39px;
+    &_other {
+      background-color: #eee;
+      padding: 26px 0 24px 0;
+    }
+    &_other:not(:last-child) {
+      border-bottom: 1px solid #d6d6d6;;
+    }
+  }
+  &__title {
+    font-size: 18px;
+    margin-bottom: 15px;
+    &_color{
+      color: $black;
+    }
+  }
+  &__text {
+    font-size: 14px;
+    line-height: 1.5;
+    padding: 0px 25px 0 23px;
+    margin-bottom: 35px;
+    &_color{
+      color: $gray;
+      margin-bottom: 0;
+    }
+  }
+  &__text-number {
+    display: block;
+    margin-bottom: 15px;
+  }
+  &__image {
+    width: 100%;
+    height: 260px;
+    object-fit: cover;
+  }
+}
+.title {
+  font-size: 18px;
+  color: $black;
+  margin-bottom: 45px;
+  padding: 0px 25px 0 23px;
+}
+
+.text {
+  font-size: 14px;
+  margin-bottom: 48px;
+  padding: 0px 25px 0 23px;
+}
+.list{
+  background-color: $white;
+  color: $black;
+  padding: 35px 45px 35px 69px;
+  text-align: left;
+  &__item{
+    position: relative;
+  }
+  &__item::before{
+    position: absolute;
+    content: '';
+    width: 40px;
+    height: 47px;
+    top: -9px;
+    left: -48px;
+    background-repeat: no-repeat;
+  }
+  &__item-first::before{
+    background-image: url(/img/reasons/house.svg);
+    background-size:100% auto;
+  }
+  &__item-second::before{
+    background-image: url(/img/reasons/gift.svg);
+    background-size:100% auto;
+  }
+  &__item-third::before{
+    background-image: url(/img/reasons/burger.svg);
+    background-size:100% auto;
+  }
+  &__item:not(:last-child) {
+    margin-bottom: 26px;
+  }
+  &__title {
+    margin-bottom: 20px;
+  }
+  &__text {
+    font-size: 14px;
+    left: 1.5;
+    color: $gray;
+  }
+}
+
+
+

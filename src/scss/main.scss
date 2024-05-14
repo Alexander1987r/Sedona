@@ -1,0 +1,16 @@
+
+@use 'default' as *;
+@use 'blocks/header' as *;
+@use 'blocks/reasons' as *;
+@use 'blocks/search' as *;
+@use 'blocks/map' as *;
+@use 'blocks/catalogs' as *;
+@use 'blocks/video' as *;
+@use 'blocks/form-section' as *;
+
+@use 'blocks/footer' as *;
+@use 'blocks/popup' as *;
+
+@use 'blocks/media' as *;
+@import 'normalize.css';
+@import '../map/leaflet/dist/leaflet.css';
