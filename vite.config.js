@@ -2,7 +2,6 @@ import { defineConfig } from 'vite';
 import { ViteImageOptimizer } from 'vite-plugin-image-optimizer';
 import {resolve} from 'path';
 export default defineConfig( {
-    base:"/Sedona",
     root:"./src",
     publicDir:"../public",
     build:{
