@@ -1,10 +1,12 @@
-import '../map/leaflet/dist/leaflet.js'
-
+import '../map/leaflet/dist/leaflet.js';
+import '../pristine/pristinejs/dist/pristine.js';
 const navigationList=document.querySelector('.navigation__list');
 const navigationButton=document.querySelector('.navigation__button');
 const navigationButtonClose=document.querySelector('.navigation__button-close');
 const screen=window.matchMedia("(max-width:768px)");
 
+const form=document.querySelector('.form');
+const body=document.body;
 //функция открытия/закрытия бургера
 export const getScreenWidth=()=>{
   const openMenu=()=>{
@@ -42,7 +44,6 @@ export const getScreenWidth=()=>{
      //добавим активный класс клику
      target.classList.add('navigation__link_active');
     }
-    console.log('sdf');
   });
 }
 //функция вывода карты (лефлет)
@@ -74,3 +75,61 @@ export const getMap=()=>{
   //добавим метку
   mainPinMarker.addTo(map);
 }
+
+//функция проверки валидации формы
+export const getValidation=()=>{
+// активизируем библиотеку Pristine
+const pristineLibrary=new Pristine(form,{
+  // класс родительского элемента, куда добавляется класс ошибки/успеха
+  classTo:'form__label',
+  errorClass: 'has-danger',
+  successClass: 'has-success',
+  // класс родительского элемента, к которому добавляется текстовый элемент ошибки
+  errorTextParent: 'form__label',
+  // тип элемента, который нужно создать для текста ошибки
+  errorTextTag: 'div',
+
+  // класс текстового элемента ошибки
+  errorTextClass: 'form__label_error',
+});
+
+
+  //функция успешной отпрвки формы
+  const getSuccessMessage=()=>{
+   const successTemplate=document.querySelector('#succes').content;
+   const popupSuccess=successTemplate.querySelector('.popup');
+   const popupSection=popupSuccess.cloneNode(true);
+   body.appendChild(popupSection);
+   popupSection.addEventListener('click',(evt)=>{
+    if(evt.target.closest('.popup__button')){
+      popupSection.remove();
+    }
+   });
+  }
+
+  //функция не успешной отпрвки формы
+  const getErrorMessage=()=>{
+    const successTemplate=document.querySelector('#error').content;
+    const popupSuccess=successTemplate.querySelector('.popup');
+    const popupSection=popupSuccess.cloneNode(true);
+    body.appendChild(popupSection);
+    popupSection.addEventListener('click',(evt)=>{
+      if(evt.target.closest('.popup__button')){
+        popupSection.remove();
+      }
+     });
+  }
+
+  form.addEventListener('submit',(evt)=>{
+  evt.preventDefault();
+  const isValide=pristineLibrary.validate();
+
+  if(isValide){
+    form.reset();
+    getSuccessMessage();
+  }else{
+    getErrorMessage();
+
+  }
+  });
+  }

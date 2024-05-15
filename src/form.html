@@ -64,7 +64,7 @@
           Помогите нашим отелям стать лучше! оставьте отзыв о них, а также о посещенных вами достопримечательностях
         </p>
         </div>
-        <form class="form" method="post" action="">
+        <form class="form" method="get" action="https://echo.htmlacademy.ru" autocomplete="off">
 
           <fieldset class="form__field form__field_FIO">
             <legend class="form__legend form__legend_FIO">
@@ -72,11 +72,11 @@
             </legend>
             <label class="form__label">
               ИМЯ*:
-              <input class="form__input" name="input-name" type="text" placeholder="Петр">
+              <input class="form__input" name="input-name" type="text" placeholder="Петр" required data-pristine-required-message="*Обязательное поле">
             </label>
             <label class="form__label">
               ФАМИЛИЯ*:
-              <input class="form__input" name="input-surname" type="text" placeholder="Иванов">
+              <input class="form__input" name="input-surname" type="text" placeholder="Иванов" required data-pristine-required-message="*Обязательное поле">
             </label>
             <label class="form__label">
               Отчество:
@@ -93,11 +93,11 @@
                 <b class="con">Контактный</b>
                  телефон*:
               </span>
-              <input class="form__input form__input_phone" name="input-phone" type="number" placeholder="Введите телефон">
+              <input class="form__input form__input_phone" name="input-phone" type="number" placeholder="Введите телефон" required  data-pristine-required-message="*Обязательное поле">
             </label>
             <label class="form__label form__label_contacts form__label_block">
               <span>Электронная почта*:</span>
-              <input class="form__input form__input_email " name="input-email" type="email" placeholder="Введите e-mail">
+              <input class="form__input form__input_email " name="input-email" type="email" placeholder="Введите e-mail" required data-pristine-required-message="*Обязательное поле">
             </label>
           </fieldset>
 
