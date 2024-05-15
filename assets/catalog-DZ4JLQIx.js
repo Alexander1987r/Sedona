@@ -1,4 +1,4 @@
-import{g as i,a as o}from"./util-BNwE8zgq.js";const t=document.querySelector(".video__player"),r=()=>{const e=document.createElement("iframe");e.classList.add("video__player-trailers"),e.src="https://www.youtube.com/embed/ApZTxOPoa54?si=PiHJDg5lLzkq4qWX",t.innerHTML="",t.appendChild(e),e.srcdoc=`
+import{g as i,a as o}from"./util-DIQZ9YTG.js";const t=document.querySelector(".video__player"),r=()=>{const e=document.createElement("iframe");e.classList.add("video__player-trailers"),e.src="https://www.youtube.com/embed/ApZTxOPoa54?si=PiHJDg5lLzkq4qWX",t.innerHTML="",t.appendChild(e),e.srcdoc=`
    <style>
    *{
      padding: 0;
