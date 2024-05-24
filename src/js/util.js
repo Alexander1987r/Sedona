@@ -109,9 +109,11 @@ const pristineLibrary=new Pristine(form,{
    const popupSuccess=successTemplate.querySelector('.section-popup');
    const popupSection=popupSuccess.cloneNode(true);
    body.appendChild(popupSection);
+   body.style.overflowY='hidden';
    popupSection.addEventListener('click',(evt)=>{
     if(evt.target.closest('.popup__button')){
       popupSection.remove();
+      body.style.overflowY='auto';
     }
    });
   }
@@ -122,9 +124,11 @@ const pristineLibrary=new Pristine(form,{
     const popupSuccess=successTemplate.querySelector('.section-popup');
     const popupSection=popupSuccess.cloneNode(true);
     body.appendChild(popupSection);
+    body.style.overflowY='hidden';
     popupSection.addEventListener('click',(evt)=>{
       if(evt.target.closest('.popup__button')){
         popupSection.remove();
+        body.style.overflowY='auto';
       }
      });
   }
