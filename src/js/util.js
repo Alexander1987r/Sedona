@@ -1,6 +1,7 @@
 import '../map/leaflet/dist/leaflet.js';
 import '../pristine/pristinejs/dist/pristine.js';
 const navigationList=document.querySelector('.navigation__list');
+const navigationLink=navigationList.querySelectorAll('.navigation__link');
 const navigationButton=document.querySelector('.navigation__button');
 const navigationButtonClose=document.querySelector('.navigation__button-close');
 const screen=window.matchMedia("(max-width:768px)");
@@ -32,10 +33,14 @@ export const getScreenWidth=()=>{
 
   }
 }
-//функция переключения активной ссылки
+
+
+  //функция переключения активной ссылки
  export const getSwitchingActive=()=>{
+
+
   navigationList.addEventListener('click',(evt)=>{
-    const target=evt.target;
+
     if((target.tagName === 'A') && (!target.classList.contains('navigation__link_active')) ){
      //найдем активный класс
      const linkActive=navigationList.querySelector('.navigation__link_active');
@@ -45,7 +50,11 @@ export const getScreenWidth=()=>{
      target.classList.add('navigation__link_active');
     }
   });
+
 }
+
+
+
 //функция вывода карты (лефлет)
 export const getMap=()=>{
   //подключим карту LeafLeat
@@ -97,7 +106,7 @@ const pristineLibrary=new Pristine(form,{
   //функция успешной отпрвки формы
   const getSuccessMessage=()=>{
    const successTemplate=document.querySelector('#succes').content;
-   const popupSuccess=successTemplate.querySelector('.popup');
+   const popupSuccess=successTemplate.querySelector('.section-popup');
    const popupSection=popupSuccess.cloneNode(true);
    body.appendChild(popupSection);
    popupSection.addEventListener('click',(evt)=>{
@@ -110,7 +119,7 @@ const pristineLibrary=new Pristine(form,{
   //функция не успешной отпрвки формы
   const getErrorMessage=()=>{
     const successTemplate=document.querySelector('#error').content;
-    const popupSuccess=successTemplate.querySelector('.popup');
+    const popupSuccess=successTemplate.querySelector('.section-popup');
     const popupSection=popupSuccess.cloneNode(true);
     body.appendChild(popupSection);
     popupSection.addEventListener('click',(evt)=>{
@@ -132,4 +141,4 @@ const pristineLibrary=new Pristine(form,{
 
   }
   });
-  }
+}

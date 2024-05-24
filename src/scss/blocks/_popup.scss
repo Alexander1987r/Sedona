@@ -1,4 +1,8 @@
 @use '../variables' as *;
+.section-popup{
+  position: absolute;
+  inset: 0;
+}
 .popup {
 
   width: 100%;

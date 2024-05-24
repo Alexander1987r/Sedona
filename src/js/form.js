@@ -4,5 +4,8 @@ import { getValidation } from "./util.js";
 
 
 getScreenWidth();
+
 getSwitchingActive();
+
+
 getValidation();

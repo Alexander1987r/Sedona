@@ -6,4 +6,3 @@ getSwitchingActive();
 getScreenWidth();
 getMap();
 
-
