@@ -10,9 +10,9 @@
 
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Sedona</title>
-    <script type="module" crossorigin src="/Sedona/assets/form-CAeua4gw.js"></script>
-    <link rel="modulepreload" crossorigin href="/Sedona/assets/util-DIQZ9YTG.js">
-    <link rel="stylesheet" crossorigin href="/Sedona/assets/util-CItPBIMp.css">
+    <script type="module" crossorigin src="/Sedona/assets/form-dZyryr2l.js"></script>
+    <link rel="modulepreload" crossorigin href="/Sedona/assets/util-BAnQ__2i.js">
+    <link rel="stylesheet" crossorigin href="/Sedona/assets/util-CTlaizoN.css">
   </head>
   <body>
 
@@ -226,32 +226,41 @@
 
     <!--Сообщение об ошибки-->
     <template id="error">
-   <section class="popup popup-error">
-    <h2 class="popup__title">
-     ЧТО-ТО ПОШЛО НЕ ТАК!
-    </h2>
-    <p class="popup__text">
-     Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
-    </p>
-    <button class="popup__button" type="button">OK</button>
-   </section>
-    </template>
-    <!--Сообщение об отправки-->
-    <template id="succes">
-    <section class="popup popup-success">
-      <h2 class="popup__title popup-success__title">
-        Ваш отзыв отправлен!
-      </h2>
-      <p class="popup__text popup-success__text">
-        Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
-      </p>
-      <div class="popup-success__footer">
-      <button class="popup__button popup-success__button" type="button">
-        ЗАкРЫТЬ ОКНО
-      </button>
+    <section class="section-popup">
+      <div class="popup popup-error">
+        <h2 class="popup__title">
+         ЧТО-ТО ПОШЛО НЕ ТАК!
+        </h2>
+        <p class="popup__text">
+         Проверьте поля, выделенные красным, скорее всего вы забыли их заполнить
+        </p>
+        <button class="popup__button" type="button">OK</button>
       </div>
     </section>
     </template>
+    <!--Сообщение об отправки-->
+    <template id="succes">
+      <section class="section-popup">
+        <div class="popup popup-success">
+          <h2 class="popup__title popup-success__title">
+            Ваш отзыв отправлен!
+          </h2>
+          <p class="popup__text popup-success__text">
+            Спасибо за ваше участие, ваш отзыв уже поступил к нам.В ближайшее время мы опубликуем его на сайте.
+          </p>
+          <div class="popup-success__footer">
+          <button class="popup__button popup-success__button" type="button">
+            ЗАкРЫТЬ ОКНО
+          </button>
+          </div>
+        </div>
+      </section>
+    </template>
 
-  </body>
+
+
+
+
+
+    </body>
 </html>
