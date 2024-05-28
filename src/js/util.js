@@ -1,5 +1,10 @@
+/*
 import '../map/leaflet/dist/leaflet.js';
 import '../pristine/pristinejs/dist/pristine.js';
+*/
+import '../../node_modules/leaflet/dist/leaflet.js';
+import '../../node_modules/pristinejs/dist/pristine.js';
+
 const navigationList=document.querySelector('.navigation__list');
 const navigationLink=navigationList.querySelectorAll('.navigation__link');
 const navigationButton=document.querySelector('.navigation__button');
