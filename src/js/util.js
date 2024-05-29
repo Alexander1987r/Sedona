@@ -1,9 +1,8 @@
 /*
 import '../map/leaflet/dist/leaflet.js';
-import '../pristine/pristinejs/dist/pristine.js';
 */
 import '../../node_modules/leaflet/dist/leaflet.js';
-import '../../node_modules/pristinejs/dist/pristine.js';
+import '../pristine/pristinejs/dist/pristine.js';
 
 const navigationList=document.querySelector('.navigation__list');
 const navigationLink=navigationList.querySelectorAll('.navigation__link');
@@ -92,6 +91,7 @@ export const getMap=()=>{
 
 //функция проверки валидации формы
 export const getValidation=()=>{
+  console.log('sdf');
 // активизируем библиотеку Pristine
 const pristineLibrary=new Pristine(form,{
   // класс родительского элемента, куда добавляется класс ошибки/успеха
